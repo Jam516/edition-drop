@@ -1,0 +1,69 @@
+.mybtn{
+  color: rgb(0,0,0);
+  font-weight: bold;
+  font-size: 32px;
+  border-style: none;
+  border-color: var(--bs-body-color);
+  width: 100%;
+  background: rgb(255,255,255);
+  box-shadow: 0px 0px;
+  font-family: 'Helvetica Now Display';
+}
+
+.btnbox{
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 8px 8px;
+}
+
+.title{
+  padding: 20px;
+  font-weight: bold;
+  font-size: 72.88px;
+  /* font-family: HelveticaNocd cwText; */
+}
+
+.descriptioncln{
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
+.descriptionbox{
+  box-shadow: 8px 8px 0px 0px;
+  border-radius: 0px;
+  border: 3px solid rgb(0,0,0);
+  height:100%
+}
+
+.descriptiontxt{
+  padding: 16px;
+  color: rgb(0,0,0);
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  /* font-family: 'Helvetica Now Display'; */
+}
+
+.imgbox{
+  box-shadow: 10px 10px 0px 0px;
+  border-radius: 0px;
+  border: 3px solid rgb(0,0,0);
+  margin-bottom: 38px;
+}
+
+.img1{
+  padding: 0px;
+  height: 317px;
+}
+
+@media (max-width: 576px) {
+  div {
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: 577px) {
+  div {
+    font-size: 22px;
+  }
+}

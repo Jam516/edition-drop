@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useEditionDrop } from '@thirdweb-dev/react';
 import ClaimButton from './ClaimButton';
+import './skin.css';
 
 const Nft = () => {
   const editionDrop = useEditionDrop(
@@ -25,17 +26,22 @@ const Nft = () => {
 
   return (
     <div style={{ margin: '10vh' }}>
-      <h1 style={{ fontSize: '28px', marginBottom: '10vh' }}>
-        Claim your early access NFT!
-      </h1>
-      <img
-        alt='early access nft'
-        src={nft}
-        width='250px'
-        height='250px'
-        style={{ marginBottom: '5vh' }}
-      />
-      <ClaimButton />
+      <h1 className='title'>Niftymint</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col descriptioncln">
+            <div className="descriptionbox">
+              <p className="descriptiontxt">We like potted plants. They're like&nbsp;pets. This is the description. Read this to get context on what's going on. Thanks.</p>
+            </div>
+          </div>
+          <div className="col offset-lg-1">
+            <div className="d-flex justify-content-center">
+              <img src={nft} className="img1"></img>
+            </div>
+            <ClaimButton />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

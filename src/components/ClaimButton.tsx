@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useEditionDrop, useMetamask, useAddress } from '@thirdweb-dev/react';
+import './skin.css';
+
 
 const ClaimButton = () => {
   const connectWithMetamask = useMetamask();
@@ -26,23 +28,19 @@ const ClaimButton = () => {
   return (
     <div>
       {address ? (
-        <button
-          disabled={claiming}
-          style={{
-            border: '3px solid rgb(0,0,0)',
-            padding: '10px 20px',
-            textAlign: 'center',
-            backgroundColor: '#05A266',
-            color: 'white',
-          }}
-
-          className='btn'
-          onClick={onClick}
-        >
-          {claiming ? 'Claiming...' : 'Claim Early Access NFT'}
-        </button>
+        <div className='btnbox'>
+          <button
+            disabled={claiming}
+            className='btn mybtn'
+            onClick={onClick}
+          >
+            {claiming ? 'Claiming...' : 'Claim Early Access NFT'}
+          </button>
+        </div>
       ) : (
-        <button onClick={connectWithMetamask}>Connect MetaMask Wallet</button>
+        <div className='btnbox'>
+          <button className='btn mybtn' onClick={connectWithMetamask}>Connect MetaMask Wallet</button>
+        </div>
       )}
     </div>
   );
