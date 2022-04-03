@@ -31,7 +31,7 @@ const Nft = () => {
         <div className="row">
           <div className="col descriptioncln">
             <div className="descriptionbox">
-              <p className="descriptiontxt">We like potted plants. They're like&nbsp;pets. This is the description. Read this to get context on what's going on. Thanks.</p>
+              <p className="descriptiontxt">Little icons are cool. Here's one. You can mint it as an ERC1155 NFT on Rinkeby. Or not. I don't mind too much becuase this is just a test for fun. Read this description to get context on what's going on. Thanks.<br></br><br></br> -NiftyTable</p>
             </div>
           </div>
           <div className="col offset-lg-1">
